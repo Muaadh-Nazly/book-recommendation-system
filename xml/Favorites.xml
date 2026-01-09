@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+  <item>
+    <name>Classic Bookmark</name>
+    <price>$2.99</price>
+    <image>../images/classicbookmark.webp</image>
+  </item>
+  <item>
+    <name>Wooden Bookshelf</name>
+    <price>$49.99</price>
+    <image>../images/woodenbookshelf.webp</image>
+  </item>
+  <item>
+    <name>Magnetic Bookmark Set</name>
+    <price>$7.99</price>
+    <image>../images/magneticbookmark.webp</image>
+  </item>
+  <item>
+    <name>Leather Book Strap</name>
+    <price>$12.99</price>
+    <image>../images/bookstrap.webp</image>
+  </item>
+  <item>
+    <name>Adjustable Book Stand</name>
+    <price>$19.99</price>
+    <image>../images/bookstand.webp</image>
+  </item>
+  <item>
+    <name>Bookends Pair</name>
+    <price>$9.99</price>
+    <image>../images/bookendspair.webp</image>
+  </item>
+  <item>
+    <name>Floating Bookshelf</name>
+    <price>$29.99</price>
+    <image>../images/floatingbookshelf.webp</image>
+  </item>
+  <item>
+    <name>Book Display Easel</name>
+    <price>$17.99</price>
+    <image>../images/bookdisplayeasel.webp</image>
+  </item>
+
+</items>

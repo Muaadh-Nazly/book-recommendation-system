@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- put the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+        <!-- depict the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- topic of the webpage -->
+    <title>Lakshan</title>
+      <!-- Link for the navigation stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+      <!-- Link regarding the website favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+     <!-- Link for the Lakshan stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/Lakshan.css">
+    <link rel="stylesheet" href="Lakshan.css">
+
+<body>
+    <!-- Header section -->
+    <header>
+          <!-- Chapter logo -->
+        <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw"
+        alt="web-logo">
+       <!--  name of the Chapter -->
+        <h1 class="chapter_h1">Chapter</h1>
+
+       <!-- Navigation menu -->
+        <ul class="nav_ul">
+ <!-- Navigation links with their buttons -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                        id="button_1">Home</button></a></li>
+ <!-- Other navigation links and the buttons -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Gallery.html"><button
+                        class="nav_button">Gallery</button></a></li>
+ <!-- More navigation links like above ones ... -->
+            <!-- ... -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button class="nav_button">Quiz</button></a>
+            </li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Scores.html"><button
+                        class="nav_button">Favorites</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/NewsLetter.html"><button class="nav_button">
+                        NewsLetter</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/ShoppingCart.html"><button
+                        class="nav_button ">Shop</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" href="../html/Aboutus.html"><button
+                        class="nav_button current_page          hello">About Us</button></a>
+            <li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Comments.html"><button
+                        class="nav_button">Comments</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                        Up</button></a></li>
+
+        </ul>
+    </header>
+  <!-- Main content's section -->
+    <div class="headDivision">
+            <!-- Image Pane regarding the personal image -->
+        <section class="imagePane">
+            <img src="../images/PersonalLakshan.jpg" alt="image Lakshan" class="personalImage">
+        </section>
+           <!-- Name Pane for greetings, name, and the role -->
+        <section class="namePane">
+            <h1 class="greetings">Hello,</h1>
+            <h2 class="nameHeading">I'm Lakshan Cooray</h2>
+            <h3 class="studentRole">Student 3</h3>
+        </section>
+    </div>
+    
+      <!-- Introduction section -->
+    <div class="IntroPane">
+        <!-- Heading for the completed tasks -->
+        <h1 class="IntroPaneHeading">Tasks Completed</h1>
+         <!-- Task Pane with images , headings -->
+        <section class="taskPane">
+            <!-- details of the Task 1 -->
+            <div class="task">
+                <h2>Shopping Cart Page</h2>
+                <img src="../images/shoppingcart.jpg" width="80%" alt="task1 Image"
+                class="imageTask">
+            </div>
+  <!-- Task two details -->
+            <div class="task">
+                <h2 class="AboutUsPageHeader">About Us Page</h2>
+                <img src="../images/AboutUsPage.jpg" width="80%" alt="task2 Image"
+                class="imageTask">
+            </div>
+        </section>
+    </div>
+
+      <!-- Contact Form section -->
+    <div class="ContactForm">
+         <!-- section of get In Touch -->
+        <div class="getInTouch">
+            <h1 class="headingContact headingGetInTouch">Get In Touch</h1>
+            <form action="mailto:LakshanCooray23@gmail.com" class="formMassage">
+                <!-- Input fields for the name and the email -->
+                <div class="info">
+                    <section class="field">
+                        <label for="Name">Name :</label>
+                        <br>
+                        <input type="text" id="Name" name="Name" placeholder="Ex: Malik Peiris"
+                        class="field">
+                    </section>
+
+                    <section>
+                        <label for="Email">Email :</label>
+                        <br>
+                        <input type="text" id="Email" name="Email" placeholder="Ex: Malik23@gmail.com" class="field">
+                    </section>
+                </div>
+
+                 <!-- Field of input for the subject -->
+                <div>
+                    <label for="Subject">Subject :</label>
+                    <br>
+                    <input type="text" id="Subject" name="Subject" placeholder="Ex: Contact"
+                    class="field subject">
+                </div>
+<!-- Textarea for message -->
+                <div>
+                    <label for="Massage">Massage :</label>
+                    <br>
+                    <textarea name="textarea" cols="50" rows="20" class="MassgeArea">Hello</textarea>
+                </div>
+ <!-- button of submition-->
+                <button type="submit" class="submitButton">Send Maasage</button>
+            </form>
+        </div>
+  <!-- Contact Me section -->
+        <div class="contactMe">
+            <h1 class="headingContact">Contact Me</h1>
+            <div class="contactMaindiv">
+                 <!-- Details slots regarding the address, email, and phone -->
+                <section class="detailslot">
+                    <img src="../images/location.png" alt="location image" width="20%" height="20%"
+                    class="detailimg">
+                    <h2 class="detailheading">No.31/9, Madinnagoda Road,<br> Rajagiriya, Colombo, Sri Lanka</h2>
+                </section>
+ <!-- Details slot to personal email -->
+                <section class="detailslot">
+                    <img src="../images/email.png" alt="Personal Email" width="20%" height="20%"
+                    class="detailimg">
+                    <h2 class="detailheading"><a href="mailto:lakshancooray23@gmail.com"
+                        class="link">lakshancooray23@gmail.com</a></h2>
+                </section>
+
+                  <!-- Details slot for the IIT email -->
+                <section class="detailslot">
+                    <img src="../images/email.png" alt="IIT Email" width="20%" height="20%"
+                    class="detailimg">
+                    <h2 class="detailheading"><a href="mailto:lakshan.20221470@iit.ac.lk"
+                        class="link">lakshan.20221470@iit.ac.lk</a></h2>
+                </section>
+
+                 <!-- Details slot for the phone -->
+                <section class="detailslot phone">
+                    <img src="../images/phone.png" alt="phone image"
+                    class="detailimg">
+                    <h2 class="detailheading">+94 712486825</h2>
+                </section>
+
+                  <!-- Social media buttons -->
+                <section class="appButton">
+                     <!-- linkedin button -->
+                    <a href="https://lk.linkedin.com/in/lakshan-cooray?trk=people-guest_people_search-card"
+                    class="linkApp">
+                        <button class="buttonApp">
+                            <img src="../images/linkedin.png" alt="linkedin" height="20%" width="20%"
+                            class="imgApp">
+                        </button>
+                    </a>
+                     <!-- instgram button -->
+
+                    <a href="https://www.instagram.com/lakshananjanacooray/?hl=en"
+                    class="linkApp">
+                        <button class="buttonApp">
+                            <img src="../images/instagram.png" alt="instagram" height="20%" width="20%"
+                            class="imgApp">
+                        </button>
+                    </a>
+                   <!-- Facebook button -->
+                    <a href="https://www.facebook.com/pradeep.cooray.564/?locale=eo_EO"
+                    class="linkApp">
+                        <button class="buttonApp fb">
+                            <img src="../images/facebook.png" alt="facebook" height="20%" width="20%"
+                            class="imgApp">
+                        </button>
+                    </a>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+<!-- Footer section -->
+    <footer>
+         <!-- Footer text with the link for designer's profile -->
+        <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Lakshan.html" class="footer_link"> Lakshan
+                Cooray</a></h3>
+    </footer>
+
+<!-- JavaScript file to navigate functionality -->
+    <script type="text/javascript" src="../javascript/navigation.js">
+
+    </script>
+<!-- JavaScript file for Lakshan"s page functions-->
+    <script type="text/javascript" src="../javascript/Lakshan.js"></script>
+
+
+</body>
+
+</html>

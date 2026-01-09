@@ -1,0 +1,410 @@
+:root {
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Roboto';
+    --colyellow: #d6b160;
+    --colblue: #0088a8;
+    --col_black1: #3b3c3d;
+    --font3:'Exo 2', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --jossofin:'Josefin Sans', sans-serif;
+
+}
+
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.Me{
+    padding-top: 9vh;
+    background-color: black;
+    height:100vh;
+}
+
+.imagePane{
+    margin-top: -52px;
+    background-color: #3b3c3d;
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalImage {
+    height: 45%;
+    width: 35%;
+    border-radius: 20px;
+    animation: fade-in-scale 1.5s 1 forwards; /* 'forwards' keeps the final state of the animation */
+    opacity: 0;
+    transform: scale(0.9); /* Slightly scale down the image initially */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    overflow: hidden; /* Hide any overflowing content within the container */
+    cursor: pointer;
+}
+.personalImage:hover {
+    animation-play-state: paused; /* Pauses the animation on hover */
+    transform: scale(1.05); /* Apply the scaling effect on hover */
+}
+@keyframes fade-in-scale {
+    to {
+        
+        opacity: 1;
+        transform: scale(2); /* At the end of the animation, the image will have its original scale */
+    }
+}
+.nameHeading{
+    font-size: 70px;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 2.5s steps(30, end) forwards, blinking 2s infinite;
+}
+
+/* Stylings for the .greetings class */
+.greetings{
+    margin-top: -10vh;
+    font-size: 100px;
+}
+.studentRole{
+    padding-top: 10vh;
+    font-size: 60px;
+    font-style: var(--font2);
+    color: black;
+}
+.namePane{
+    margin-top: -531px;
+    margin-left: 40%;
+    height: 91vh;
+    width:60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--poppins);
+    font-size: 90%;
+}
+
+@keyframes typing {
+    from { width: -1 }
+    to { width: 80% }
+}
+
+/* These are keyframes for the blinking animation */
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: white}
+    100% {border-right-color: transparent}
+}
+
+
+.IntroPane{
+    background-color: #000000;
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.taskPane{
+    padding-top: 10vh;
+    background-color: var(--col_black1);
+    width: 95%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    padding-bottom: 10vh;
+}
+.task{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.task h2{
+    margin-top: 5px;
+    align-self: center;
+    color: azure;
+    font-size: 40px;
+    font-family: var(--poppins);
+
+}
+  /* Styling for the images within .task class */
+.task img{
+    border-radius: 3px;
+}
+.IntroPaneHeading{
+    color: var(--colyellow);
+    font-size: 70px;
+    font-family: var(--jossofin);
+}
+
+.ContactForm{
+    display: flex;
+    flex-direction: row;
+    height:80vh;
+    width: 100%;
+    padding-right:2vw;
+    padding-top: 4vh;
+    padding-left: 2vw;
+    padding-bottom: 4vh;
+    color: aliceblue;
+    font-family: var(--jossofin);
+}
+.getInTouch{
+    width:50%;
+    background-color: var(--col_black1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height:100vh;
+}
+.getInTouch h1{
+    margin-top: 3vh;
+    font-family: var(--jossofin);
+    display: flex;
+    align-self: flex-start;
+    margin-left: 4vw;
+    margin-bottom: -5vh;
+}
+.formMassage{
+    display:flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-left: 4vw;
+    width:37vw;
+    margin-top: 6vh;
+    
+}
+.headingContact{
+    align-self: flex-start;
+    color:aliceblue;
+    margin-left: 5vw;
+    margin-top: -2vh;
+    font-family: var(--jossofin);
+    font-size: 35px;
+    margin-bottom: 5vh;
+}
+
+.submitButton{
+    margin-top: 10px;
+    width:13vw;
+    height: 8vh;
+    border-radius: 10px;
+    background-color: var(--colyellow);
+    font-size: 17px;
+    font-style: var(--poppins);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Stylings for the .submitButton class on hover */
+.submitButton:hover{
+    background-color: var(--colblue);
+    color: antiquewhite;
+}
+
+.contactMe{
+    width: 50%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:100vh;
+    padding-top: 5vh;
+}
+
+.ContactForm{
+    background-color: aliceblue;
+    height:110vh;
+    
+}
+/* Styling for the .info class */
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* This is the styling for .field class */
+.field{
+    height: 40px;
+    border-radius: 10px;
+}
+/* Stylings for the .detailheading class */
+.detailheading{
+    font-size: 23px;
+}
+/* Stylings for the .subject class */
+.subject{
+    width: 100%;
+}
+/* This depicts styling for .formMassage class */
+.formMassage{
+    width: 70%;
+}
+/* Styling to .MassgeArea class */
+.MassgeArea{
+    resize: none;
+    width:100%;
+    border-radius: 10px;
+    padding: 5px;
+    height: 40vh;
+    font-size: 17px;
+}
+
+.field{
+    font-size: 17px;
+    width: 200px;
+}
+
+.detailslot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4vh;
+    margin-left: 5vw;
+    gap:2vw;
+}
+/* This is for styling for .detailimg class */
+.detailimg{
+    border-radius: 10000px;
+    width:70px;
+    height:70px;
+}
+/* This is for the styling for .headingContact class */
+.headingContact{
+    align-self: flex-start;
+    color:aliceblue;
+    margin-left: 5vw;
+    margin-top: -2vh;
+    font-family: var(--jossofin);
+    font-size: 35px;
+    margin-bottom: 5vh;
+}
+/* Stylings for the .buttonApp class */
+.buttonApp{
+    margin-top: 5vh;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+}
+/* Stylings for the .buttonApp class on hover */
+.buttonApp:hover{
+    background-color: white;
+}
+/* Styling regarding .imgApp class */
+.imgApp{
+    height: 100%;
+    width:100%;
+}
+/* Stylings for the .linkApp class */
+.linkApp{
+    text-decoration: none;
+}
+/* This lines shows tylings for .appButton class */
+.appButton{
+    margin-top: 4.5vh;
+    display: flex;
+    gap: 3vw;
+    margin-left: 5vw;
+}
+/* This depicts styling for .link class */
+
+.link{
+    text-decoration: none;
+    font-family: var(--poppins);
+    color: white;
+}
+/* This shows styling to the .link class on hover */
+.link:hover{
+    color: var(--colblue);
+}
+/* Styling for the .detailslot h2 class */
+.detailslot h2{
+    font-family: var(--poppins);
+}
+
+/* This shows the styling for .contactMaindiv class */
+.contactMaindiv{
+    margin-left: -10vw;
+}
+/* Styling for the .fb class */
+.fb{
+    background-color: white;
+}
+/* Styling for the .fb class on hover */
+.fb:hover{
+    background-color: #cec8c8;
+}
+/* This is for the styling for #Name.field class */
+#Name.field{
+    width:18vw;
+}
+/* This is for the styling for #Email.field class */
+#Email.field{
+    width:18vw;
+}
+/* Styling for the label element */
+label{
+    font-size: 18px;
+    font-family: var(--poppins);
+}
+/* Stylings for the .imageTask class */
+.imageTask{
+    border-radius: 10px;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+}
+/* This shows the styling for .imageTask class on hover */
+.imageTask:hover{
+    transform: scale(1.05);
+}
+/* Stylings for the footer */
+footer {
+    background-color: #24252a;
+    height: 10vh;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+}
+/* Stylings for the footer heading */
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    color: aliceblue;
+
+}
+/*This is the styling for footer links */
+.footer_link {
+    color: #bebebe;
+    transition-duration: 1.25s;
+}
+/* This depicts tyling for footer links on hover */
+.footer_link:hover {
+    color: var(--colyellow);
+    font-size: 20px;
+
+}
+/* This is the styling for footer links when active */
+.footer_link:active {
+    color: #0088a8;
+}
+

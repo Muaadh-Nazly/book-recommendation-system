@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- put the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Describe the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- topic of the webpage -->
+    <title>About Us</title>
+      <!-- Link for the navigation stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+   <!-- Link for website favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+       <!-- Link for the About Us stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../css/Aboutus.css">
+
+<body>
+       <!-- Header section -->
+    <header>
+        <!-- logo chapter -->
+        <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw"
+        alt="web-logo">
+        <!-- name of the chapter -->
+        <h1 class="chapter_h1">Chapter</h1>
+        
+        <!-- Navigation menu -->
+        <ul class="nav_ul">
+            <li class="nav_list">
+                 <!-- Home link with a button -->
+                 <a class="nav_link" onmouseover="nav_highliter(); 
+           " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                        id="button_1">Home</button></a></li>
+  <!-- Other navigation links which use buttons -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Gallery.html"><button
+                        class="nav_button">Gallery</button></a></li>
+                         <!-- other navigation links ... -->
+            <!-- ... -->
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button class="nav_button">Quiz</button></a>
+            </li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Scores.html"><button
+                        class="nav_button">Favorites</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/NewsLetter.html"><button class="nav_button">
+                        NewsLetter</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/ShoppingCart.html"><button
+                        class="nav_button ">Shop</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" href="#"><button class="nav_button current_page hello">About
+                        Us</button></a>
+            <li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Comments.html"><button
+                        class="nav_button">Comments</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                        Up</button></a></li>
+
+        </ul>
+    </header>
+   <!-- Main section regarding contents -->
+    <main>
+ <!-- Team heading -->
+        <div class="team_heading">
+            <div class="container_heading">
+                <!--  team section Heading -->
+                <h1 class="typed">Our Team</h1>
+              </div>
+               <!-- Horizontal line below heading -->
+            <section class="hr_tag"></section>
+        </div>
+    <!-- section of Team members -->
+        <div class="team_members">
+              <!-- Team member 1 -->
+            <div class="person">
+                    <!-- team member 1 Image -->
+                <img src="../images/yasini.jpg" height="200rem" width="200rem" class="img_person" onmouseover="show_detail(1)" onmouseout="remove_detail(1)" alt="image Student 1 - Yasisni">
+     <!-- Link to the team member one's profile with the button -->
+                <a href="../html/Yasini.html" class="person_button">
+                        Click Me
+                </a>
+                    <!-- Additional details of the team member one -->
+                <div class="detial_member" id="student_1">
+                   <h3 class="member_name">Yasini Karunanayake</h3>
+                   <h3 class="member_task">Task 1</h3>
+                </div>
+            </div>
+ <!-- Team member 2 -->
+            <div class="person">
+                 <!-- Image of the team member two -->
+                <img src="../images/Muaadh1.jpg" height="200rem" width="200rem" class="img_person"  onmouseover="show_detail(2)" onmouseout="remove_detail(2)" alt="image Student 2 - Muaadh">
+                  <!-- Link to the team member two's profile with a button -->
+                <a href="../html/Muaadh.html" class="person_button">
+                        Click Me
+                </a>
+                   <!-- Additional details about the team member two -->
+                <div class="detial_member" id="student_2">
+                    <h3 class="member_name">Muaadh Nazly</h3>
+                    <h3 class="member_task">Task 2</h3>
+                 </div>
+            </div>
+   <!-- Team member 3 -->
+            <div class="person">
+                <!-- Image of the team member three -->
+                <img src="../images/Lakshan.jpg" height="200rem" width="200rem" class="img_person" onmouseover="show_detail(3)" onmouseout="remove_detail(3)"
+                alt="image Student 3 - Lakshan">
+                 <!-- Link to the team member 3rds profile with a button -->
+                <a href="../html/Lakshan.html" class="person_button">
+                        Click Me
+                </a>
+                  <!-- Additional details about the 3rd team member -->
+                <div class="detial_member" id="student_3">
+                    <h3 class="member_name">Lakshan Cooray</h3>
+                    <h3 class="member_task">Task 3</h3>
+                 </div>
+            </div>
+               <!-- Team member 4 -->
+            <div class="person">
+                <!-- Image of the team member four -->
+                <img src="../images/Praveen.jpg" height="200rem" width="200rem" class="img_person" onmouseover="show_detail(4)" onmouseout="remove_detail(4)"
+                alt="image Student 4 - Praveen">
+                   <!-- Link to the team member 4th profile with a button -->
+                <a href="../html/Praveen.html" class="person_button">
+                        Click Me
+                </a>
+                  <!-- Additional details about the 4th team member -->
+                <div class="detial_member" id="student_4">
+                    <h3 class="member_name">Praveen Peiris</h3>
+                    <h3 class="member_task">Task 4</h3>
+                 </div>
+            </div>
+
+        </div>
+          <!-- team members section end -->
+
+        
+        
+
+    </main>
+     <!-- End of main content -->
+
+    <footer>
+         <!-- Footer section of the designer's name and his link to the profile -->
+        <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Lakshan.html" class="footer_link"> Lakshan
+            Cooray</a></h3>
+    </footer>
+
+    <!-- JavaScript file to navigate -->
+
+    <script type="text/javascript" src="../javascript/navigation.js">
+
+    </script>
+
+<!-- JavaScript file regarding the About Us page functions -->
+    <script type="text/javascript" src="../javascript/Aboutus.js">
+
+    </script>
+
+    
+
+
+</body>
+
+</html>

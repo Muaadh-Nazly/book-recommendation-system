@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsLetter</title>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+    <link rel="stylesheet" href="../css/NewsLetter.css">
+
+<body onload="document.nlform.mail.focus();document.nlform.name.focus()">
+    <header>
+        <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw">
+        <h1 class="chapter_h1">Chapter</h1>
+        <ul class="nav_ul">
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                        id="button_1">Home</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Gallery.html"><button
+                        class="nav_button">Gallery</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                            " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button
+                        class="nav_button">Quiz</button></a>
+            </li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Scores.html"><button
+                            class="nav_button">Favorites</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" href="../html/NewsLetter.html"><button
+                        class="nav_button current_page hello">NewsLetter</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/ShoppingCart.html"><button
+                        class="nav_button ">Shop</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Aboutus.html"><button class="nav_button">About
+                        Us</button></a>
+            <li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Comments.html"><button
+                        class="nav_button">Comments</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                        Up</button></a></li>
+
+        </ul>
+    </header>
+
+    <div id="divform">
+        <main>
+            <form name="nlform" id="nlform" action="#">
+                <div id="newsletterbody">
+                    <div class="nlbody" class="nlbodytop">
+                        <legend class="nltexts">Subscribe to our Newsletter</legend><br>
+                        <p id="nlpara" class="nltexts">Subscribe to the Chapter Newsletter</p>
+                    </div>
+                    
+                    <div name="nlvalid" class="nlbody" style="background-color:white">
+                        <div class="divinput">
+                            <input type="text" placeholder="Name" name="name" class="nltexts">
+                            <input type="text" placeholder="Email address" name="mail" id="mail" class="nltexts">
+                        </div>
+                        <label>
+                        <input type="checkbox" checked="checked" name="subscribe" class="nltexts"> Daily Newsletter
+                        </label>
+                    </div>
+                    
+                    <div class="nlbody">
+                        <input type="submit" class="nlbutton" class="nltexts" value="Subscribe" name="Validate" onclick="ValidateEmail(document.nlform.mail.value);ValidateName(document.nlform.name.value);TrueDetails()">
+                        <!-- <input type="submit" value="Subscribe" name="Validate" onclick="TrueDetails()"> -->
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <!-- Footer section of the designer's name and his link to the profile -->
+       <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Lakshan.html" class="footer_link"> Praveen
+           Peiris</a></h3>
+   </footer>
+
+    <script type="text/javascript" src="navigation.js"></script>
+    <script src="../javascript/NewsLetter.js"></script>
+
+</body>
+</html>

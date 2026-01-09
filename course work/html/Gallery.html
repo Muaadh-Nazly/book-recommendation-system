@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- put the character encoding to UTF-8 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- topic of the webpage -->
+        <title>Gallery</title>
+        <!-- Link for the navigation stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+        <!-- Link regarding the website favicon -->
+        <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+        <!-- Link for the Gallery stylesheet -->
+        <link rel="stylesheet" href="../css/Gallery.css">
+    </head>  
+
+    <body>
+        <!-- Header section -->
+        <header>
+            <!-- Chapter logo -->
+            <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw">
+            <!--  name of the Chapter -->
+            <h1 class="chapter_h1">Chapter</h1>
+            <!-- Navigation menu -->
+            <ul class="nav_ul">
+
+    <!-- Navigation links with their buttons -->
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                            id="button_1">Home</button></a></li>
+    <!-- Other navigation links and the buttons -->
+                <li class="nav_list"><a class="nav_link" href="#"><button
+                            class="nav_button current_page hello">Gallery</button></a></li>
+    <!-- More navigation links like above ones ... -->
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button class="nav_button">Quiz</button></a>
+                </li>
+
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Scores.html"><button
+                            class="nav_button">Favourites</button></a></li>
+
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                    " onmouseout="nav_back_highliter()" href="../html/NewsLetter.html"><button class="nav_button">
+                            NewsLetter</button></a></li>
+
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                    " onmouseout="nav_back_highliter()" href="../html/ShoppingCart.html"><button
+                            class="nav_button">Shop</button></a></li>
+
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                    " onmouseout="nav_back_highliter()" href="../html/Aboutus.html"><button class="nav_button">About
+                            Us</button></a>
+                <li>
+
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Comments.html"><button
+                            class="nav_button">Comments</button></a></li>
+
+                <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                            Up</button></a></li>
+            </ul>
+        </header>
+        
+        <!-- Main content's section -->
+        <main>
+            <div class="container">
+                <!-- Book Gallery -->
+                <div class="gallery">
+                    <!-- Book 1 -->
+                    <div class="gallery-item" data-name="b-1">
+                        <div class="thumb-section">
+                            <img src="../images/dune.webp" alt="Book 1">
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">Dune</h3>
+                            <p class="book-author">Frank Herbert</p>                       
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button" >View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="gallery-item" data-name="b-2">
+                        <div class="thumb-section">
+                            <img src="../images/endersgame.webp" alt="Book 2">     
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">Ender's Game</h3>
+                            <p class="book-author">Orson Scott Card</p>                       
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="gallery-item" data-name="b-3">
+                        <div class="thumb-section">
+                            <img src="../images/gameofthrones.webp" alt="Book 3">
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">Game of Thrones</h3>
+                            <p class="book-author">George R.R. Martin</p>                       
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="gallery-item" data-name="b-4">
+                        <div class="thumb-section">
+                            <img src="../images/harrypotter.webp" alt="Book 4">                       
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">Harry Potter</h3>
+                            <p class="book-author">J.K. Rowling</p>                       
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="gallery-item" data-name="b-5">
+                        <div class="thumb-section">
+                            <img src="../images/neuromancer.webp" alt="Book 5">
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">Neuromancer</h3>
+                            <p class="book-author">William Gibson</p>                        
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 6 -->
+                    <div class="gallery-item" data-name="b-6">
+                        <div class="thumb-section">
+                            <img src="../images/thebladeitself.webp" alt="Book 6">                       
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">The Blade Itself</h3>
+                            <p class="book-author">Joe Abercrombie</p>                       
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 7 -->
+                    <div class="gallery-item" data-name="b-7">
+                        <div class="thumb-section">
+                            <img src="../images/thebookthief.webp" alt="Book 7">                      
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">The Book Thief</h3>
+                            <p class="book-author">Markus Zusak</p>     
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 8 -->
+                    <div class="gallery-item" data-name="b-8">
+                        <div class="thumb-section">
+                            <img src="../images/thecatcher.webp" alt="Book 8">   
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">The Catcher in the Rye</h3>
+                            <p class="book-author">J.D. Salinger</p>   
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 9 -->
+                    <div class="gallery-item" data-name="b-9">
+                        <div class="thumb-section">
+                            <img src="../images/thegoldfinch.webp" alt="Book 9">   
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">The Goldfinch</h3>
+                            <p class="book-author">Donna Tartt</p>   
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 10 -->
+                    <div class="gallery-item" data-name="b-10">
+                        <div class="thumb-section">
+                            <img src="../images/thenameofthewind.webp" alt="Book 10">   
+                        </div>
+                        <div class="book-details">
+                            <h3 class="book-title">The Name of the Wind</h3>
+                            <p class="book-author">Patrick Rothfuss</p>   
+                        </div>
+                        <div class="book-actions">
+                            <button class="View-button">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List of Book Previews -->
+            <div class="products-preview">
+                
+                <!-- Book Preview 1 -->
+                <div class="preview" data-target="b-1">
+                    <div class="img-section">
+                        <img src="../images/dune.webp" alt="">
+                    </div>
+                    <!-- Book Information -->
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">Dune</h2>
+                            <h3 class="Genre"><span>Genre:</span> Science Fiction</h3>
+                            <h3 class="Author"><span>Author:</span> Frank Herbert</h3>
+                            <h3 class="year"><span>Year:</span> 1965</h3>
+                            <h4 class="Description">"Dune" is a science fiction novel set in a distant future where interstellar travel and political intrigue are commonplace. The story follows Paul Atreides, the heir to a noble family, as he navigates the treacherous world of Arrakis, a desert planet with a valuable resource known as spice. Filled with complex characters, epic world-building, and themes of power, religion, and ecology, "Dune" has become a classic in the genre.</h4>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Book Preview 2 -->
+                <div class="preview" data-target="b-2">
+                    <div class="img-section">
+                        <img src="../images/endersgame.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">Ender's Game</h2>
+                            <h3 class="Genre"><span>Genre:</span> Science Fiction</h3>
+                            <h3 class="Author"><span>Author:</span> Orson Scott Card</h3>
+                            <h3 class="year"><span>Year:</span>1985</h3>
+                            <h4 class="Description">"Ender's Game" is a science fiction novel set in a future where humanity is at war with an alien race known as the Formics. The story revolves around Andrew "Ender" Wiggin, a young boy who is recruited into an elite military training program to prepare for a future alien invasion. With its exploration of themes like morality, leadership, and the consequences of war, "Ender's Game" has captivated readers with its thought-provoking storyline.</h4>
+                        </div>
+                    </div>   
+                </div>
+
+                <!-- Book Preview 3 -->
+                <div class="preview" data-target="b-3">
+                    <div class="img-section">
+                        <img src="../images/gameofthrones.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">Game of Thrones</h2>
+                            <h3 class="Genre"><span>Genre:</span> Fantasy</h3>
+                            <h3 class="Author"><span>Author:</span> George R.R. Martin</h3>
+                            <h3 class="year"><span>Year:</span>1996</h3>
+                            <h4 class="Description">"Game of Thrones" is the first book in the epic fantasy series called "A Song of Ice and Fire." Set in the fictional continents of Westeros and Essos, the story follows the intricate and often brutal power struggles between noble families vying for control of the Iron Throne. With its complex characters, intricate plotlines, and a richly detailed world, "Game of Thrones" has gained immense popularity, both as a book series and a television adaptation.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 4 -->
+                <div class="preview" data-target="b-4">
+                    <div class="img-section">
+                        <img src="../images/harrypotter.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">Harry Potter and the Sorcerer's Stone</h2>
+                            <h3 class="Genre"><span>Genre:</span> Fantasy</h3>
+                            <h3 class="Author"><span>Author:</span> J.K. Rowling</h3>
+                            <h3 class="year"><span>Year:</span>1997</h3>
+                            <h4 class="Description">"Harry Potter and the Sorcerer's Stone" is the first book in the beloved "Harry Potter" series. It introduces readers to the magical world of Harry Potter, a young boy who discovers he is a wizard and enrolls at Hogwarts School of Witchcraft and Wizardry. The story follows Harry's journey as he learns about friendship, courage, and the dark forces that threaten the wizarding world. With its enchanting storytelling and memorable characters, the book has become a modern classic.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 5 -->
+                <div class="preview" data-target="b-5">
+                    <div class="img-section">
+                        <img src="../images/neuromancer.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">Neuromancer</h2>
+                            <h3 class="Genre"><span>Genre:</span> Science Fiction</h3>
+                            <h3 class="Author"><span>Author:</span> William Gibson</h3>
+                            <h3 class="year"><span>Year:</span>1984</h3>
+                            <h4 class="Description">"Neuromancer" is a seminal cyberpunk novel that explores a dystopian future where corporations have immense power and technology merges with the human mind. The story follows a washed-up computer hacker named Case who gets recruited for a dangerous mission involving artificial intelligence, virtual reality, and high-stakes espionage. With its gritty atmosphere and visionary ideas, "Neuromancer" has influenced the cyberpunk genre and remains a must-read for science fiction fans.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 6 -->
+                <div class="preview" data-target="b-6">
+                    <div class="img-section">
+                        <img src="../images/thebladeitself.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">The Blade Itself</h2>
+                            <h3 class="Genre"><span>Genre:</span> Fantasy</h3>
+                            <h3 class="Author"><span>Author:</span> Joe Abercrombie</h3>
+                            <h3 class="year"><span>Year:</span>2006</h3>
+                            <h4 class="Description">"The Blade Itself" is the first book in the "First Law" trilogy. It presents a dark and gritty fantasy world filled with morally complex characters. The story weaves together the lives of a cynical, self-destructive warrior, a skilled and manipulative inquisitor, and a highly ambitious nobleman. As war looms on the horizon, these characters' paths converge in unexpected ways, leading to a tale of political intrigue, violence, and the search for redemption.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 7 -->
+                <div class="preview" data-target="b-7">
+                    <div class="img-section">
+                        <img src="../images/thebookthief.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">The Book Thief</h2>
+                            <h3 class="Genre"><span>Genre:</span> Historical Fiction</h3>
+                            <h3 class="Author"><span>Author:</span> Markus Zusak</h3>
+                            <h3 class="year"><span>Year:</span>2005</h3>
+                            <h4 class="Description">"The Book Thief" is a haunting and beautifully written novel set in Nazi Germany during World War II. The story is narrated by Death and follows a young girl named Liesel Meminger, who steals books to cope with the harsh realities of her surroundings. Through her experiences, the power of words, and the resilience of the human spirit are explored. "The Book Thief" has touched readers with its poignant storytelling and unforgettable characters.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 8 -->
+                <div class="preview" data-target="b-8">
+                    <div class="img-section">
+                        <img src="../images/thecatcher.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">The Catcher in the Rye</h2>
+                            <h3 class="Genre"><span>Genre:</span> Literary Fiction</h3>
+                            <h3 class="Author"><span>Author:</span> J.D. Salinger</h3>
+                            <h3 class="year"><span>Year:</span>1951</h3>
+                            <h4 class="Description">"The Catcher in the Rye" is a classic coming-of-age novel that follows the rebellious teenager Holden Caulfield over a few days in New York City. Holden's candid and introspective narrative captures the essence of teenage angst, alienation, and the struggle to find meaning in a world that seems phony and superficial. With its raw portrayal of adolescence and themes of identity, innocence, and rebellion, the book has resonated with generations of readers.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 9 -->
+                <div class="preview" data-target="b-9">
+                    <div class="img-section">
+                        <img src="../images/thegoldfinch.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">The Goldfinch</h2>
+                            <h3 class="Genre"><span>Genre:</span> Literary Fiction</h3>
+                            <h3 class="Author"><span>Author:</span> Donna Tartt</h3>
+                            <h3 class="year"><span>Year:</span>2013</h3>
+                            <h4 class="Description">"The Goldfinch" is a Pulitzer Prize-winning novel that tells the story of Theodore Decker, a young boy who survives a terrorist bombing at an art museum. In the aftermath of the tragedy, he clings to a small, priceless painting called "The Goldfinch," which becomes a symbol of his connection to his deceased mother. The novel explores themes of loss, art, friendship, and the ways in which our choices shape our lives.</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Preview 10 -->
+                <div class="preview" data-target="b-10">
+                    <div class="img-section">
+                        <img src="../images/thenameofthewind.webp" alt="">
+                    </div>
+                    <div class="info-section">
+                        <div class="close">
+                            <button class="close-button"></button>
+                        </div>
+                        <div class="text-block">
+                            <h2 class="book-name">The Name of the Wind</h2>
+                            <h3 class="Genre"><span>Genre:</span> Fantasy</h3>
+                            <h3 class="Author"><span>Author:</span> Patrick Rothfuss</h3>
+                            <h3 class="year"><span>Year:</span>2007</h3>
+                            <h4 class="Description">"The Name of the Wind" is the first book in the "Kingkiller Chronicle" series. It follows the life of Kvothe, a renowned and enigmatic figure known for his magical abilities and legendary exploits. Through Kvothe's own narration, readers delve into a world of music, magic, and adventure. With its lyrical prose and intricate storytelling, the book has captured the imagination of fantasy enthusiasts worldwide.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <!-- Footer section -->
+        <footer>
+    <!-- Footer text with the link for designer's profile -->
+        <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Yasini.html" class="footer_link"> yasini Karunanayake</a></h3>
+        </footer>
+        
+        
+    <!-- JavaScript file to navigate functionality -->
+        <script type="text/javascript" src="../javascript/navigation.js"> </script>
+    <!-- JavaScript file for Gallery Page -->
+        <script type="text/javascript" src="../javascript/Gallery.js"> </script>
+
+    </body>
+</html>

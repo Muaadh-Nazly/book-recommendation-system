@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muaadh</title>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/Muaadh.css">
+    <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+
+<body>
+    <header>
+        <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw" alt="Chapter Logo">
+        <h1 class="chapter_h1">Chapter</h1>
+  
+        <ul class="nav_ul">
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                        id="button_1">Home</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Gallery.html"><button
+                        class="nav_button">Gallery</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button class="nav_button">Quiz</button></a>
+            </li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()"><button class="nav_button"
+                        href="../html/Scores.html">Favorites</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/NewsLetter.html"><button class="nav_button">
+                        NewsLetter</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()"><button class="nav_button ">Shop</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" href="../html/Aboutus.html"><button
+                        class="nav_button current_page hello">About Us</button></a>
+            <li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Comments.html"><button
+                        class="nav_button">Comments</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                        Up</button></a></li>
+
+        </ul>
+    </header>
+
+    <main>
+        <!-- My Self -->
+        <div class="Me">
+            <section class="imagePane">
+            <img src="../images/Muaadh2.png" alt="Muaadh" class="personalImage">
+        </section>
+        <section class="namePane">
+            <h1 class="greetings">Hello,</h1>
+            <h2 class="nameHeading">I'm Muaadh Nazly</h2>
+            <h3 class="studentRole">Student 2</h3>
+        </section>
+        </div>
+
+        <div class="IntroPane">
+            <!-- Heading for the completed tasks -->
+            <h1 class="IntroPaneHeading">Tasks Completed</h1>
+             <!-- Task Pane with images , headings -->
+            <section class="taskPane">
+                <!-- details of the Task 1 -->
+                <div class="task">
+                    <h2>Main Page</h2>
+                    <img src="../images/mainSS.png" width="80%" alt="task1 Image"
+                    class="imageTask">
+                </div>
+      
+            <!-- Task two details -->
+                <div class="task">
+                    <h2 class="AboutUsPageHeader">Quiz Page</h2>
+                    <img src="../images/QuizProgressSS.png" width="80%" alt="task3 Image"
+                    class="imageTask">
+                </div>
+        <!-- Task three details -->
+        <div class="task">
+            <h2>Comments Page</h2>
+            <img src="../images/CommentsSS.png" width="80%" alt="task3 Image"
+            class="imageTask">
+        </div>
+            </section>
+        </div>
+        
+      <!-- Contact Form section -->
+    <div class="ContactForm">
+        <!-- section of get In Touch -->
+       <div class="getInTouch">
+           <h1 class="headingContact headingGetInTouch">Get In Touch</h1>
+           <form action="mailto:muaadhnasly2005@gmail.com" class="formMassage">
+               <!-- Input fields for the name and the email -->
+               <div class="info">
+                   <section class="field">
+                       <label for="Name">Name :</label>
+                       <br>
+                       <input type="text" id="Name" name="Name" placeholder="Ex: Malik Peiris"
+                       class="field">
+                   </section>
+
+                   <section>
+                       <label for="Email">Email :</label>
+                       <br>
+                       <input type="text" id="Email" name="Email" placeholder="Ex: Malik23@gmail.com" class="field">
+                   </section>
+               </div>
+
+                <!-- Field of input for the subject -->
+               <div>
+                   <label for="Subject">Subject :</label>
+                   <br>
+                   <input type="text" id="Subject" name="Subject" placeholder="Ex: Contact"
+                   class="field subject">
+               </div>
+<!-- Textarea for message -->
+               <div>
+                   <label for="Massage">Massage :</label>
+                   <br>
+                   <textarea name="textarea" cols="50" rows="20" class="MassgeArea">Hello</textarea>
+               </div>
+<!-- button of submition-->
+               <button type="submit" class="submitButton">Send Maasage</button>
+           </form>
+       </div>
+ <!-- Contact Me section -->
+       <div class="contactMe">
+           <h1 class="headingContact">Contact Me</h1>
+           <div class="contactMaindiv">
+                <!-- Details slots regarding the address, email, and phone -->
+               <section class="detailslot">
+                   <img src="../images/location.png" alt="location image" width="20%" height="20%"
+                   class="detailimg">
+                   <h2 class="detailheading">A 37/7 Muruthawala<br> Mawanella, Kegalle, Sri Lanka</h2>
+               </section>
+<!-- Details slot to personal email -->
+               <section class="detailslot">
+                   <img src="../images/email.png" alt="Personal Email" width="20%" height="20%"
+                   class="detailimg">
+                   <h2 class="detailheading"><a href="mailto:muaadhnasly2005@gmail.com"
+                       class="link">muaadhnasly2005@gmail.com</a></h2>
+               </section>
+
+                 <!-- Details slot for the IIT email -->
+               <section class="detailslot">
+                   <img src="../images/email.png" alt="IIT Email" width="20%" height="20%"
+                   class="detailimg">
+                   <h2 class="detailheading"><a href="mailto:mu-aadh.20220494@iit.ac.lk"
+                       class="link">mu-aadh.20220494@iit.ac.lk</a></h2>
+               </section>
+
+                <!-- Details slot for the phone -->
+               <section class="detailslot phone">
+                   <img src="../images/phone.png" alt="phone image"
+                   class="detailimg">
+                   <h2 class="detailheading">+94 756752326</h2>
+               </section>
+
+                 <!-- Social media buttons -->
+               <section class="appButton">
+                    <!-- linkedin button -->
+                   <a href="https://www.linkedin.com/in/muaadh-nazly-978271266/"
+                   class="linkApp">
+                       <button class="buttonApp">
+                           <img src="../images/linkedin.png" alt="linkedin" height="20%" width="20%"
+                           class="imgApp">
+                       </button>
+                   </a>
+                    <!-- instgram button -->
+
+                   <a href="#https://www.instagram.com/muaadh.nazly"
+                   class="linkApp">
+                       <button class="buttonApp">
+                           <img src="../images/instagram.png" alt="instagram" height="20%" width="20%"
+                           class="imgApp">
+                       </button>
+                   </a>
+                  <!-- Facebook button -->
+                   <a href="#https://www.facebook.com/muaadh.nazly"
+                   class="linkApp">
+                       <button class="buttonApp fb">
+                           <img src="../images/facebook.png" alt="facebook" height="20%" width="20%"
+                           class="imgApp">
+                       </button>
+                   </a>
+               </section>
+
+           </div>
+       </div>
+   </div>
+    </main>
+
+    <div></div>
+
+    <footer>
+            <!-- Footer text with the link for designer's profile -->
+           <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Muaadh.html" class="footer_link"> Muaadh Nazly</a></h3>
+       
+
+    </footer>
+
+    <script type="text/javascript" src="../javascript/navigation.js">
+
+    </script>
+
+
+</body>
+
+</html>

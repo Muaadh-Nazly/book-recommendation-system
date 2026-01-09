@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Roboto';
+    --colyellow: #FECD63;
+    --colblue: #0088a8;
+    --col_black1: #3b3c3d;
+    --font3:'Exo 2', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --jossofin:'Josefin Sans', sans-serif;
+
+}
+body{
+    background-color: rgb(28, 28, 28);
+    height: 200px;
+}
+main{
+    height: 500px;
+}
+
+.Instruction{
+    background-color:var(--colyellow);
+    color:var(--col_black1);
+    width: 80%;
+    height: 400px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 11%;
+    padding: 2%;
+    border-radius: 25px;
+    
+}
+.Instruction h2{
+    font-family: var(--jossofin);
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.Instruction #quizStart{
+    color: rgb(255, 255, 255);
+    margin-left: 46%;
+    margin-right: 50%;
+    margin-top: 3%;
+    width: 100px;
+    height: 35px;
+    border:#8b8b8b 2px solid;
+    border-radius: 10px;
+    background-color: var(--col_black1);
+    cursor: pointer;
+    
+}
+.Instruction #quizStart:hover{
+    background-color:#000000;
+}
+.Instruction.clearIntro{
+    opacity: 0;
+}
+
+.platform.activePlatform{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(0%,-110%)scale(1) ;
+}
+
+.platform{
+    font-size: 25px;
+    color: rgb(255, 153, 0);
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(0%,-110%)scale(0.9) ;
+
+}
+.platform .title{
+    display: flex;
+}
+.platform .timer{
+    font-size: 20px;
+    color: blue;
+    margin-left: 80%;
+    margin-top: -8%;
+    text-align: center;
+}
+.quiz{
+    border-top: 5px solid black;
+    padding: 20px 0;
+}
+.quiz h2{
+    font-family: var(--font3);
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.answers{
+    font-family: var(--poppins);
+    background-color: white;
+    color: rgb(2, 2, 74);
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid rgb(2, 2, 74);
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.answers:hover:not([disabled]){
+    background-color: rgb(2,2,74);
+    color: white;
+}
+.answers:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background-color:rgb(2, 2, 74);
+    color: white;
+    width: 150px;
+    padding: 10px;
+    margin-left: 39%;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+    display: none;
+}
+#next-btn:hover{
+    background-color: blue;
+}
+
+.correct{
+    background-color: rgb(115, 232, 115);
+}
+.incorrect{
+    background-color: rgb(222, 122, 122);
+}
+#close-quiz-btn{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+}
+
+.score{
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    font-size: 25px;
+    color: rgb(255, 153, 0);
+    max-width: 600px;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    opacity: 0;
+    pointer-events: auto;
+    transform: translate(0,-213%)scale(0.9);
+    pointer-events: none;
+}
+.score.activeScore{
+    width: 50%;
+    height: 500px;
+    background-color: white;
+    font-size: 25px;
+    color: rgb(255, 153, 0);
+    max-width: 600px;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(0,-163%)scale(0.9);
+}
+.score .title{
+    display: flex;
+    border-bottom: 4px solid black;
+}
+.score img{
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+.score #badge{
+    margin-top: 10%;
+    font-size: 100px;
+    text-align: center;
+}
+.score #remarks{
+    font-size: 25px;
+    text-align: center;
+    color:black;
+    
+}
+footer {
+    background-color: #24252a;
+    height: 10vh;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    color: aliceblue;
+
+}
+
+.footer_link {
+    color: #bebebe;
+    transition-duration: 1.25s;
+}
+
+.footer_link:hover {
+    color: var(--colyellow);
+    font-size: 20px;
+
+}
+
+.footer_link:active {
+    color: #0088a8;
+}

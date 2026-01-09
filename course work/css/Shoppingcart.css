@@ -1,0 +1,1638 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Exo&family=Exo+2:wght@700;900&family=Fira+Sans+Condensed:wght@700&family=Josefin+Sans&family=Open+Sans:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto&family=Varela+Round&display=swap');
+
+/* CSS Variables */
+:root {
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Roboto';
+    --colyellow: #FECD63;
+    --colblue: #0088a8;
+    --col_black1: #3b3c3d;
+    --font3:'Exo 2', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --jossofin:'Josefin Sans', sans-serif;
+    --fontWhite:white;
+    --colMainBlack:black;
+}
+/* Global Reset */
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Styling to the cart header */
+.cart_header {
+    background-color: #000000;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    z-index: 10000;
+
+}
+/* This shows the styling for the main content area */
+main {
+
+    height: 300vh;
+    margin-top: -5.5vh;
+    padding-top: 8vh;
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* Styling to the cart image */
+.img_cart {
+    margin-top: 10px;
+    height: 8vh;
+    margin-left: -100px;
+}
+/* Styling to the logo */
+.logo {
+    display: flex;
+    align-self: center;
+    background-color: black;
+    color: var(--colyellow);
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    padding: 4px 0px;
+    cursor: pointer;
+   
+}
+/* This shows the styling for the icon box container */
+.icon_box {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+}
+/*This shows the Styling for the logo on hover */
+
+.logo:hover {
+    color: whitesmoke;
+}
+/* This shows the styling for the logo on active state */
+.logo:active {
+    color: whitesmoke;
+}
+/* This shows the styling for the 4th logo element */
+.logo:nth-child(4) {
+    border: 2px solid white;
+    border-radius: 1500px;
+    text-align: center;
+    border-width: 3px;
+    text-align: center;
+    border-color: var(--colyellow);
+}
+
+/* Stylings to the 3rd logo element */
+.logo:nth-child(3) {
+    border: 2px solid white;
+    border-radius: 1500px;
+    text-align: center;
+    border-width: 3px;
+    border-color: var(--colyellow);
+
+}
+/* This shows the styling for the active state of the "fa-plus" icon */
+.fa-plus:active{
+    color: rgb(176, 174, 174);
+}
+/* This shows the styling for the active state of the "fa-minus" icon */
+.fa-minus:active{
+    color: rgb(176, 174, 174);
+}
+/* This shows the styling for the total quantity element */
+.total_quantity {
+    color: aliceblue;
+    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    margin-left: -83px;
+}
+/* This shows the styling for the side bar */
+.side_bar {
+    height: 100vh;
+    background-color: var(--col_black1);
+    position: fixed;
+    top: 0vh;
+    left: 68%;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    z-index: 15000;
+    display: none;
+}
+/* This shows the styling for the top section of the side bar */
+.sideBarTop {
+    margin-top: 0px;
+    margin-left: 0px;
+    color: aliceblue;
+    background-color: var(--colyellow);
+    height: 20vh;
+    z-index: 7500;
+    width: 32%;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-family: var(--font1);
+    z-index: 20000;
+
+}
+/* This shows the styling for the data operator section */
+
+.data_operator{
+    padding-left: 20px;
+    height: 70vh;
+    margin-top: 11vh;
+    width:37%;
+    text-align: justify;
+    overflow-y: scroll;
+    direction: rtl;
+
+}
+/* This is for the styling for the side image */
+
+.side_image{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 100px;
+}
+/* Styling to the single detail section */
+
+.single_detail{
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+/* Styling to the quantity section */
+
+.quantity{
+    margin-left: -10px;
+    width:3vw;
+    display: flex;
+    align-self: center;
+    padding-top: 15px;
+    margin-left: 0.5px;
+   
+}
+/* This shows the styling for the quantity input */
+#quantity{
+    margin-top: 20px;
+    width: 61px;
+    height: 5vh;
+    border-radius: 20px;
+    padding-right: 10px;
+    font-family: var(--jossofin);
+    font-weight: bold;
+    background-color: #ffe9b8;
+   
+}
+
+/* This shows the styling for the item side button */
+.item_side_button{
+    margin-left: 19px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    min-height: 6vh;
+    width: 100px;
+    border-radius: 10px;
+    padding-right: 17px;
+    padding-top: 7px;
+    font-family: var(--poppins);
+    font-weight: bold;
+    background-color: #a3a3a3;
+    font-size: 17px;
+    transition-duration: 0.7s;
+
+}
+/* Styling to the item side button on hover */
+.item_side_button:hover{
+   background-color: #d9d9d9;;
+}
+/* This shows the styling for the item side button on active state */
+.item_side_button:active{
+    background-color: #e7e7e7;
+    font-size: 17.5px;
+ }
+
+/* Stylings for the side book title */
+.side_book_title{
+    color: aliceblue;
+    font-family: var(--poppins);
+    width:100px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+    line-height: 40px;
+    margin-right: 20px;
+}
+/* This shows the styling for the quantity section */
+.quantity{
+   display: flex;
+   flex-direction: column;
+   margin-top: -40px;
+   
+}
+
+
+/*This shows the styling for the total bill section */
+.total_bill {
+    background-color: var(--colyellow);
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 80vh;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+/* This shows the styling for the exit cart button */
+.exit_cart {
+    width: 16%;
+    margin-right: -5px;
+    height: 40px;
+    background-color: #818284;
+    font-family: var(--font2);
+    font-size: 24px;
+    font-weight: bold;
+    white-space: none;
+    cursor: pointer;
+}
+
+.exit_cart:hover {
+    background-color: #d9d9d9;
+}
+
+.exit_cart:active {
+    font-size: 25px;
+    background-color: #e7e7e7;
+
+}
+/* This shows the styling for the Checkout button */
+.Checkout {
+    width: 16%;
+    margin-right: 0px;
+    height: 40px;
+    font-family: var(--font2);
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #a3a3a3;
+    white-space: none;
+    cursor: pointer;
+
+}
+
+.Checkout:hover {
+    background-color: #d9d9d9;
+
+}
+
+
+.Checkout:active {
+    font-size: 25px;
+    background-color: #e7e7e7;
+
+}
+/* This shows the styling for the h1 element in the sideBarTop */
+h1.sideBarTop {
+    margin-left: -40px;
+}
+/* This depicts the styling for the logo_side element */
+.logo_side {
+    background-color: var(--colyellow);
+    color: #000000;
+    margin-right: 5px;
+}
+/* This shows the styling for the total_val element */
+.total_val {
+    padding-left: 40px;
+    position: fixed;
+    top: 83vh;
+    font-family: var(--font1);
+    font-size: 30px;
+}
+/* This shows the styling for the card_holder section */
+.card_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+
+/* Styling to the card element */
+.card {
+    width: 20%;
+    margin-top: 20px;
+    background-color: rgb(237, 246, 255);
+    width: 300px;
+    height: 375px;
+    border-radius: 15px;
+    transition-duration: 2.5s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card:hover {
+    transform: scale(1.065);
+    z-index: 300px;
+}
+/*This shows the styling for the card_img element */
+
+.card_img {
+    width: 300px;
+    height: 230px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    opacity: 0.95;
+}
+
+.card_img:hover {
+    opacity: 1.0;
+}
+/* This shows the styling for the card_button element */
+
+.card_button {
+    border-radius: 15px;
+    height: 6vh;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    font-family: var(--font1);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #818284;
+    transition: 2s;
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+.card_button:hover {
+    background-color: #a3a3a3;
+    opacity: 1.0;
+}
+
+.card_button:active {
+    transition-duration: 0.5s;
+    background-color: #d9d9d9;
+}
+/* This shows the styling for the detail_container section */
+
+.detail_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    transition-duration: 1.0s;
+}
+/* This depicts the styling for the card_title element */
+
+.card_title {
+    font-size: 30px;
+    font-family: var(--jossofin);
+    display: flex;
+    margin-bottom: 20px;
+    transition-duration: 1.5s;
+}
+/* This is for the styling for the card_title when hovered */
+
+.card_title:hover {
+    font-weight: bold;
+}
+/* This is for the styling for the card_price */
+
+.card_price {
+    font-size: 25px;
+    font-family: var(--poppins);
+    display: flex;
+    transition-duration: 1.5s;
+
+}
+/* This is for the styling for the card_price when hovered */
+
+.card_price:hover {
+    font-weight: bold;
+}
+
+/* This is for the styling for the product preview overlay */
+
+.produt_preview {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+
+}
+/* This depicts styling for the product preview item container */
+
+.produt_preview .preview_item{
+    display: none;
+    padding:3rem;
+    text-align: center;
+    background-color: rgb(233, 254, 255);
+    position:relative;
+    margin:2rem;
+    width:40rem;
+    height:34rem;
+
+}
+/* This is for the styling for the activated product preview item */
+
+.produt_preview .preview_item.activated{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    flex-wrap: nowrap;
+}
+/* This is for the styling for the product preview image */
+
+.produt_preview .preview_item img{
+    height:190px;
+    display: flex;
+    align-self: center;
+    width: 55%;   
+}
+/* This is for the styling for the product preview item title */
+
+.produt_preview .preview_item h3{
+    font-style: var(--font2);
+    font-size: 28px;
+    text-align: center;
+    font-family: var(--jossofin);
+    padding-top: 10px;
+    
+}
+/* this is for the styling for the product preview item description */
+
+.produt_preview .preview_item p{
+   font-family: var(--poppins);
+   font-size: 17px;
+    
+}
+/* This depicts the styling for the product preview item rating */
+
+.produt_preview .preview_item .rating{
+    color: rgb(182, 155, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+/* This depicts styling for the product preview item number of ratings */
+
+.produt_preview .preview_item .rating .number_of_rates{
+    color: rgb(34, 29, 1);
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+/* This is for the styling for the add to cart button */
+
+.produt_preview .preview_item .addtocart{
+    background-color: var(--col_black1);
+    height:3rem;
+    width: 9rem;
+    border-radius: 5px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    padding-left: 25px;
+    padding-top:10px;
+    font-weight: bolder;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colyellow);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    padding-bottom: 20px;
+    margin-bottom: 7px;
+    
+}
+/* This depcits the styling for the add to cart button when hovered */
+
+.produt_preview .preview_item .addtocart:hover{
+    background-color: var(--colyellow);
+    color: var(--col_black1);
+}/* This depcits the styling for the add to cart button when active */
+
+.produt_preview .preview_item .addtocart:active{
+    font-size: 19px;
+}
+/* This is regarding the styling for the close icon in the product preview item */
+.produt_preview .preview_item i {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    cursor: pointer;
+    transition-duration: 3.0s;
+
+}
+/* This is regarding the tyling to the close icon in the product preview item when hovered */
+
+.produt_preview .preview_item i:hover {
+   transform: rotate(180deg);
+   color: red;
+}
+/* This is regarding the styling for the close icon in the product preview item when active */
+
+.produt_preview .preview_item i:active {
+    transition-duration: 0.5s;
+    color: var(--colyellow);
+    font-size: 29px;
+
+ }
+/* This is for the styling for the product preview item description when justified */
+
+.produt_preview .preview_item p{
+    text-align: justify;
+    font-size: 20px;
+    font-style: 'Exo 2', sans-serif;
+}
+/* Purpose of this is to style for the product preview item price */
+
+.produt_preview .preview_item .price{
+    font-size: 27px;
+    font-weight: bold;
+}
+/* Styling to the footer section */
+
+footer {
+    background-color: #24252a;
+    height: 10vh;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+}
+/* This depicts the styling for the footer heading */
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    color: aliceblue;
+
+}
+/* This depicts the styling for the footer links */
+
+.footer_link {
+    color: #bebebe;
+    transition-duration: 1.25s;
+}
+/* This is for the styling for the footer links when hovered */
+
+.footer_link:hover {
+    color: var(--colyellow);
+    font-size: 20px;
+
+}
+/* This depicts the styling for the footer links when active */
+
+.footer_link:active {
+    color: #0088a8;
+}
+/* This is for the purpose of media query for screen width up to 320px */
+
+@media screen and (max-width:320px) {
+    main {
+        min-width: 320px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card_img {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+/* This is for the media query for screen width up to 320px */
+
+@media screen and (max-width:320px) {
+    main {
+        min-width: 320px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card_img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:290px) {
+    footer {
+        width: 290px;
+    }
+
+}
+/* This is for the styling for the card image */
+
+.img_card{
+    height:60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* This is for the styling for the checkout form overlay */
+
+.checkout_form{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+}
+/* Purpose of this is to styling for the full form container in the checkout form */
+
+.full_form{
+    background-color: rgb(243, 244, 243);
+    width:80vw;
+    height:100%;
+    border-radius: 10px;
+    z-index: 100000;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* This is for the styling for the form section in the checkout form */
+
+.form_section{
+    width: 45%;
+    margin-left: 3vw;
+    flex-wrap: wrap-reverse;
+}
+/* This is for the styling for the heading in the form section */
+
+.detail_heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--jossofin);
+    font-size: 28px;
+    
+}
+/* This is for the styling for the form elements container */
+
+.form{
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+/* This depcicts the styling to the input fields in the form */
+
+input{
+    height: 5.5vh;
+    border-radius: 7px;
+    width:80%;
+    margin-top: -20px;
+    border: 2px solid;
+    border-color: #6d6d6d;
+    padding-left: 10px;
+    cursor: pointer;
+}
+/* Purpose of this is for the styling of the labels in the form */
+
+label{
+    padding-left: 10px;
+    font-family: var(--jossofin);
+}
+/* This is for the styling for the horizontal line separator */
+
+.horizontal_line{
+    height: 80vh;
+    width: 1.5px;
+    border-radius: 2px;
+    margin-top: 7vh;
+    background-color: #656565;
+    margin-left: -38vw;
+    margin-bottom: 20px;
+}
+/* This is to style for the Bill heading in the form */
+
+.Bill_heading{
+    margin-top: 20px;
+    font-family: var(--jossofin);
+    font-size: 28px;
+    margin-left: -32vw;
+}
+/* This depicts the styling for the bill form container */
+
+.bill_form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: flex-start;
+    margin-left: -37vw;
+    margin-right: 20px;
+  
+    
+}
+/* This is for the styling for the bill section */
+.Bill{
+    height: 50vh;
+    width:36vw;
+    border-radius: 10px;
+    background-color: #cfcfcf;
+    opacity: 0.97;
+    overflow-y: scroll;
+    direction: rtl;
+    margin-bottom: 4vh;
+}
+/* This depicts the styling for the total bill price section */
+
+.tot_bill_price{
+    display: flex;
+    align-self: flex-end;
+    font-family: var(--jossofin);
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+/* This is for the purpose of the styling for the form button section */
+
+.form_button{
+    display: flex;
+    justify-content: space-between;
+}
+/*This is for the  styling for the back to cart button */
+
+.back_to_cart{
+    background-color: #0088a8;
+    width:40%;
+    height: 5vh;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: var(--jossofin);
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+/* This is for the styling for the back to cart button when hovered */
+
+.back_to_cart:hover{
+    background-color: #007893;
+}
+/* This depicts the styling for the back to cart button when active */
+
+.back_to_cart:active{
+    background-color: #479db0;
+}
+/* This is for the styling for the headings in the bill form */
+
+.bill_form_headings{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--jossofin);
+}
+
+/*This is for the styling to the proceed payment button */
+
+.proceed_payment{
+    width: 40%;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: var(--colyellow);
+    font-family: var(--jossofin);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    
+}
+/* This depscibes the styling for the proceed payment button when hovered */
+
+.proceed_payment:hover{
+    background-color: #c3a971;
+}
+/* This shows the styling for the proceed payment button when active */
+
+.proceed_payment:active{
+    background-color: #d6be8b;
+}
+/* This is fpr the styling for the headings in the bill summary */
+
+.Item_heading{
+    margin-left: 70px;
+}
+/* This is for the styling for the headings in the bill summary */
+
+.Price_heading{
+    margin-left: 25px;
+}
+/* This is for the styling for the unit price in the bill summary */
+
+.unit_price{
+    margin-left: -45px;
+}
+/* This shows the styling for the Total heading in the bill summary */
+
+.Total_heading{
+    margin-right: 20px;
+}
+/* This shows the styling for the final bill section */
+
+.final_bill{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: var(--poppins);
+}
+/* Styling to the final bill image */
+
+.final_bill_image{
+    margin-left: -25px;
+    margin-top: 20px;
+}
+/*This descibes the styling for the scroll-to-top button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:var(--colyellow); /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-style: var(--poppins);
+  }
+  /* This is ro style for the scroll-to-top button when hovered */
+
+  #myBtn:hover {
+    background-color: #555; 
+    color: #ffffff;
+  }
+/* Media query regarding the screen width up to 1200px */
+
+  @media only screen and (max-width: 1200px) {
+          /* Styles for the elements in the side bar */
+
+    .side_bar {
+        
+        left: 50%;
+        width: 88%;
+    }
+    
+    .sideBarTop {
+        
+        height: 10vh;
+        font-size: 20px;
+        width:57%;
+    }
+    
+    .data_operator {
+       
+        width: 60%;
+    }
+
+    .exit_cart{
+        width:25%;
+    }
+
+    .Checkout{
+        width:25%;
+    }
+    
+   
+}
+
+/* Media query regarding the screen width up to 870px */
+
+@media only screen and (max-width: 870px) {
+      /* Styles for the elements in the side bar */
+
+    .side_bar {
+        left: 0;
+        width: 100%;
+    }
+    
+    .sideBarTop {
+        height: 8vh;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .data_operator {
+        width: 100%;
+        margin-top: 8vh;
+    }
+    
+    .total_bill {
+        top: 70vh;
+    }
+    
+    .exit_cart,.Checkout {
+        width: 30%;
+    }
+    
+    .total_val {
+        
+        top: 73vh;
+    }
+    
+    .side_book_title{
+        margin-left: 30px;
+        margin-right: 10vw;
+    }
+  
+}
+
+/* This depicts the media query for screen width up to 864px */
+
+@media only screen and (max-width: 864px) {
+      /* Styles for the elements in the side bar */
+
+    .side_bar {
+      left: 0;
+      width: 100%;
+    }
+  
+    .sideBarTop {
+      height: 12vh;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .data_operator {
+      width: 100%;
+      margin-top: 12vh;
+    }
+  
+    .total_bill {
+      top: initial;
+      bottom: 0;
+      height: 25vh;
+    }
+  
+    .exit_cart,
+    .Checkout {
+      width: 40%;
+    }
+  
+    .total_val {
+      top: initial;
+      bottom: 26vh;
+      font-size: 20px;
+    }
+  
+    .checkout_form {
+      width: 100%;
+      min-height: 100vh;
+    }
+  
+    .full_form {
+      width: 90vw;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form_section,
+    .Billing_details {
+      width: 90%;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  
+    .horizontal_line {
+      width: 90%;
+      margin-left: 5%;
+    }
+  
+    .bill_form {
+      margin-left: 5%;
+    }
+  
+    .back_to_cart,
+    .proceed_payment {
+      width: 90%;
+    }
+  
+    .final_bill_image {
+      margin-left: -15px;
+      margin-top: 10px;
+    }
+
+    .exit_cart{
+      width:50%;
+      height:8vh;
+      font-size: 30px;
+    }
+
+    .Checkout{
+      width: 50%;
+      height:8vh;
+      font-size: 30px;
+    }
+
+    .total_val{
+      position: fixed;
+      top:80vh;
+      left:5vw;
+      font-size: 40px;
+    }
+
+    .single_detail{
+      margin-top: 10px;
+      margin-right: 0px;
+    }
+  }
+/* This is for the media query for screens up to 500px width */
+  @media only screen and (max-width: 500px)  {
+       /* This shows the styles for elements when the screen width is up to 500px */
+    /* This if for modifying the layout of the single_detail section */
+    .single_detail{
+      margin-top:20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:10px;
+    }
+    /* This is for modifying the layout of the item_side_button section */
+    .item_side_button{
+      width: 50%;
+      font-size: 30px;
+      padding-right: 40px;
+      margin-bottom: 70px;
+    }
+
+
+  }
+
+  
+  /* This is for the media query for screens between 864px and 1300px width */
+
+  @media only screen and (min-width: 864px) and (max-width: 1300px) {
+       /* Styling for elements when the screen width is between 864px and 1300px */
+    /* To modify the layout of the side_bar, sideBarTop, and data_operator sections */
+    .side_bar {
+      left: 40%;
+      width: 70%;
+    }
+  
+    .sideBarTop {
+      height: 15vh;
+      font-size: 25px;
+      width:60%;
+    }
+  
+    .data_operator {
+      width: 105%;
+      margin-top: 15vh;
+    }
+      /* This is for modifying the layout of the total_bill, exit_cart, Checkout, and total_val sections */
+    .total_bill {
+      top: initial;
+      bottom: 0;
+      height: 25vh;
+    }
+  
+    .exit_cart,
+    .Checkout {
+      width: 40%;
+    }
+  
+    .total_val {
+      top: initial;
+      bottom: 26vh;
+      font-size: 25px;
+    }
+      /* This is for modifying the layout of the checkout_form, full_form, form_section, and horizontal_line sections */
+
+    .checkout_form {
+      width: 100%;
+      min-height: 100vh;
+    }
+  
+    .full_form {
+      width: 70vw;
+    }
+  
+    .form_section,
+    .Billing_details {
+      width: 45%;
+      margin-left: 2.5%;
+      margin-top: 30px;
+    }
+  
+    .horizontal_line {
+      width: 2px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+      /* This is to modify the layout of the bill_form, back_to_cart, proceed_payment, and single_detail sections */
+
+    .bill_form {
+      margin-left: 0;
+    }
+  
+    .back_to_cart,
+    .proceed_payment {
+      width: 90%;
+    }
+
+    .exit_cart{
+      width:30%;
+      height:6vh;
+    }
+
+    .Checkout{
+      width: 30%;
+      height:6vh;
+    }
+
+    .total_val{
+      position: fixed;
+      top:80vh;
+      left:40vw;
+    }
+    .single_detail{
+      display: flex;
+      gap:20px;
+    }
+  }
+
+
+
+  
+
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    /* This depicts styles for elements when the screen width is between 768px and 1200px */
+    /* This is for modifying the layout of the checkout_form, full_form, form_section, and detail_heading sectors */
+    .checkout_form {
+      width: 100%;
+      min-height: 400vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      padding-top: 2vh;
+      display:none;
+    }
+  
+    .full_form {
+      width: 80vw;
+      height: 130%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+   
+    }
+  
+    .form_section {
+      width: 100%;
+      margin-left: 0;
+      flex-wrap: wrap;
+    }
+  
+    .detail_heading,
+    .Bill_heading {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+   /* To modify the layout of the form, input, and Bill sections */
+    .form {
+      height: auto;
+      align-items: center;
+    }
+  
+    input {
+      width: 90%;
+      margin-left: 0;
+    }
+  
+    .horizontal_line {
+      display: none;
+    }
+  
+    .Bill_heading {
+      margin-left: 0;
+    }
+  
+    .bill_form {
+      margin-top: 10px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .Bill {
+      width: 100%;
+      height: auto;
+      max-height: 40vh;
+      display: flex;
+      align-self: flex-start;
+      margin-left: 5%;
+    }
+      /* Purpose of this is to modify the layout of the tot_bill_price, form_button, back_to_cart, proceed_payment, and Bill_heading sections */
+
+    .tot_bill_price {
+      margin-bottom: 10px;
+    }
+  
+    .form_button {
+      flex-direction: column;
+    }
+  
+    .back_to_cart,
+    .proceed_payment {
+      width: 90%;
+    }
+  
+    .bill_form_headings {
+      display: none;
+    }
+      /* Purpose of this is to modify the layout of the Item_heading, Price_heading, Quantity_heading, and Total_heading sections */
+
+    .Item_heading,
+    .Price_heading,
+    .Quantity_heading,
+    .Total_heading {
+      text-align: center;
+    }
+     /* This is to modify the layout of the final_bill, final_bill_image, and Billing_details sections */
+    .final_bill {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+  /* This is for modifying the layout of the final_bill_image section */
+    .final_bill_image {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    /* This is to modify the width of the Billing_details section */
+
+    .Billing_details{
+      width: 90%;
+    }
+    /* This is to modify the layout and alignment of the Bill section */
+
+    .Bill{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 10vw;
+    }
+    /* This is for modifying the width and margin of the form_button section */
+
+    .form_button{
+      width:110%;
+      margin-left: 3%;
+    }
+    /* This is for modifying the margin of the back_to_cart section */
+
+    .back_to_cart{
+      margin-bottom: 20px;
+    }
+    /* This is for modifying the margin of the proceed_payment section */
+
+    .proceed_payment{
+      margin-bottom: 10%;
+    }
+    /* This is to modify the layout, direction, and alignment of the final_bill section */
+
+    .final_bill{
+      display: flex;
+      flex-direction: row-reverse;
+      gap:40%;
+      align-items: center;
+    }
+  }
+  
+  /* Mobile Styles */
+  
+  @media only screen and (max-width: 767px) {
+        /* This depicts the styles for screens with a width up to 767px (Mobile) */
+    /* This is for Modifying the layout of the checkout_form and full_form sections */
+    .checkout_form {
+      width: 105%;
+      min-height: 900%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      padding-top: 2vh;
+      display: none;
+    }
+  
+    .full_form {
+      width: 90vw;
+      height: 120%;
+      min-height: 170vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    
+
+    }
+  
+    .form_section {
+      width: 100%;
+      margin-left: 0;
+      flex-wrap: wrap;
+    }
+  
+    .detail_heading,
+    .Bill_heading {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+   /* This is to modify the height of the form section and the width of the input fields */
+    .form {
+      height: auto;
+      align-items: center;
+      margin-bottom: -20vh;
+    }
+  
+    input {
+      width: 90%;
+      margin-left: 0;
+    }
+      /* This is to modify the layout of the horizontal_line section */
+
+    .horizontal_line {
+      display: none;
+            /* This settle the width and height to 0px effectively hides the horizontal_line */
+
+      width:0px;
+      height:0px;
+    }
+  
+    .Bill_heading {
+      margin-left: 0;
+    }
+      /* This is to modify the layout and alignment of the bill_form section */
+
+    .bill_form {
+      margin-top: 10px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+      /* Purpose of this is to modifying the width and height of the Bill section */
+
+    .Bill {
+      width: 100%;
+      height: auto;
+      max-height: 40vh;
+    }
+      /* This is to modify the margin-bottom of the tot_bill_price section */
+
+    .tot_bill_price {
+      margin-bottom: 10px;
+    }
+        /* This is for modifying the layout of the form_button section */
+
+    .form_button {
+      flex-direction: column;
+    }
+    /* Purpose of this is modifying the width of the back_to_cart and proceed_payment sections */
+
+    .back_to_cart,
+    .proceed_payment {
+      width: 90%;
+    }
+      /* To hide the bill_form_headings section */
+
+    .bill_form_headings {
+      display: none;
+    }
+      /* To modify the alignment of the Item_heading, Price_heading, Quantity_heading, and Total_heading sections */
+
+    .Item_heading,
+    .Price_heading,
+    .Quantity_heading,
+    .Total_heading {
+      text-align: center;
+    }
+      /* To modify the layout and alignment of the final_bill section */
+
+    .final_bill {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      justify-content: flex-start;
+     
+    }
+  /* This is to modify the layout of the final_bill_image section */
+
+    .final_bill_image {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+/* To modify the layout, alignment, and position of the Bill section */
+
+    .Bill{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 10vw;
+      position: relative;
+        /* Purpose of this is to for hdding horizontal scroll if the content overflows */
+      overflow-x: scroll;
+    }
+/* For modifying the width and margin of its form_button section */
+
+    .form_button{
+      width:110%;
+      margin-left: 3%;
+    }
+/* Purpose of this is modifying the margin of the back_to_cart section */
+
+    .back_to_cart{
+      margin-bottom: 20px;
+    }
+/* This depicts the modifying the margin of the proceed_payment section */
+
+    .proceed_payment{
+      margin-bottom: 10%;
+    }
+/* Purpose of this is to modify the layout, direction, gap, and alignment of the final_bill section */
+
+    .final_bill{
+      display: flex;
+      flex-direction: row-reverse;
+      gap:40%;
+      align-items: center;
+      width: 100%;
+  
+    }
+
+  }
+  
+/* This is to style for form validation error messages */
+
+  .formValidation{
+    color: red;
+    padding-left: 30px;
+    font-family: var(--jossofin);
+    padding-top: 3px;
+  }
+/* This is for the styling for label elements */
+
+  .lab{
+    font-size: 20px;
+  }
+/* This is to styles for confirmation message block */
+
+  .conformatioMsg {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 122222222;
+  }
+  /* Purpose of this is for the styles for the inner message block inside the confirmation message */
+
+  .massageblock {
+    background-color: white; 
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    height: 59%;
+    width: 44%;
+    opacity: 1.0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+      /* Adding vertical scroll for content overflowing */
+
+    overflow-y: scroll;
+  }
+/* This is for the styling for the logo image with ID logoweb */
+
+  #logoweb{
+    height: 50%;
+    width: 35%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+  }
+/* This is to style for the greeting section */
+
+  .proceedGreet{
+    font-family: var(--jossofin);
+    font-size: 30px;
+    font-weight: bolder;
+  }
+/* Purpose of this is for styling for the greeting section with class 'greet' */
+
+  .greet{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    background-color: var(--colyellow);
+    padding-top: 20px;
+    width:60%;
+    margin-top: 50px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  /* This is for the styling for the lastPop section */
+
+  .lastPop{
+    font-family: var(--poppins);
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: justify;
+  }
+/* Purpose of this is to style for the close button inside the confirmation message block */
+
+  #closePopProceed{
+    padding-top: 10px;
+    font-size: 30px;
+    margin-bottom: -20px;
+    margin-left: 30vw;
+    transition-duration: 0.2s;
+  }
+/* This is for the styles for the close button when hovered */
+
+  #closePopProceed:hover{
+    color: red;
+  }
+/* This shows the styles for the close button when active (clicked) */
+
+  #closePopProceed:active{
+    transition-duration: 0.5s;
+    color: var(--colyellow);
+    font-size: 29px;
+  }

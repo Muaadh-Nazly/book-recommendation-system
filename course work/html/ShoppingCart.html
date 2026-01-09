@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head section which contains metadata and title -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/Shoppingcart.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+      <!-- Header section -->
+    <header>
+         <!-- Chapter logo and its heading -->
+        <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw"
+        alt="web logo">
+        <h1 class="chapter_h1">Chapter</h1>
+         <!-- Navigation bar with different buttons -->
+        <ul class="nav_ul">
+             <!-- item list with a link to Home page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                        id="button_1">Home</button></a></li>
+ <!-- item list with a link to gallery page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Gallery.html"><button
+                        class="nav_button">Gallery</button></a></li>
+ <!-- item list with a link to quiz page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                            " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button
+                        class="nav_button">Quiz</button></a></li>
+ <!-- item list with a link to scores page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Scores.html"><button
+                        class="nav_button">Favorites</button></a></li>
+ <!-- item list with a link to newsletter page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/NewsLetter.html"><button class="nav_button">
+                        NewsLetter</button></a></li>
+ <!-- item list with a link to shopping cart page -->
+            <li class="nav_list"><a class="nav_link" href="../html/ShoppingCart.html"><button
+                        class="nav_button current_page hello">Shop</button></a></li>
+ <!-- item list with a link to about us page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Aboutus.html"><button class="nav_button">About
+                        Us</button></a></li>
+ <!-- item list with a link to comments page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Comments.html"><button
+                        class="nav_button">Comments</button></a></li>
+ <!-- item list with a link to Signup page -->
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                        Up</button></a></li>
+
+        </ul>
+    </header>
+
+        <!-- lines for spacing -->
+
+    <br><br>
+    <!-- Main content of the page -->
+    <main>
+           <!--  header section of the Shopping cart-->
+        <div class="cart_header">
+   <!-- Icon box with font icons for shopping cart -->
+            <div class="icon_box">
+                <i class="fa fa-shopping-cart icon-4x logo" style="font-size: 30px;" onclick="get_side_bar()"></i>
+                <span class="total_quantity" onclick="get_side_bar()">0</span>
+   <!-- Font awesome icons for increasment and the decreasment of font size -->
+                <i class="fa fa-plus logo" style="font-size: 20px;"
+                onclick="increaseFontSize('.card_title', '.card_price', '.card_button')"></i>
+
+                <i class="fa fa-minus logo" style="font-size: 20px;"
+                onclick=" decreaseFontSize('.card_title', '.card_price', '.card_button')"></i>
+
+            </div>
+
+        </div>
+
+          <!-- Side bar section for shopping cart -->
+        <div class="side_bar">
+             <!--  side bar's top section of with the cart icon and heading -->
+            <section class="sideBarTop">
+                <i class="fa fa-shopping-cart icon-4x logo_side" style="font-size: 30px;"></i>
+                <h1>Cart</h1>
+            </section>
+
+               <!-- Data operator section which is in the side bar -->
+            <div class="data_operator" id="item_side_bar">
+            </div>
+
+<!-- Total bill section which shows in the side bar -->
+            <div class="total_bill">
+                <p class="total_val">Total : &pound;0.00</p>
+                <br>
+ <!-- Side bar buttons for exit and checkout -->
+                <div class="side_button">
+                    <button class="exit_cart" onclick="close_side_bar()">Exit</button>
+                    <button class="Checkout" onclick=" get_checkout_form()">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card holder section to display product cards -->
+        <div class="card_holder" id="card">
+
+
+        </div>
+    </main>
+
+ <!-- Product preview section to show product details -->
+    <div class="produt_preview" id="alert">
+         <!-- Product detail container -->
+        <div class="preview_item" id="product_item">
+             <!-- Close button to close the product preview -->
+            <i class="fa fa-times" aria-hidden="true" onclick="handleCloseBuy()"></i>
+ <!-- Product image -->
+            <img src="../images/woodenbookshelf.webp" alt="" height="30%" width="40%" class="img_pop"
+                id="product_image">
+                   <!-- Product title -->
+            <h3 id="product_preview_title"></h3>
+             <!--  product rating Section (not implemented) -->
+            <section class="rating">
+            </section>
+              <!-- rating numbers for the product -->
+            <span class="number_of_rates" id="number_of_rates">(300)</span>
+            <!-- Product description (not implemented) -->
+            <p id="product_para">
+            </p>
+              <!-- price of the Product -->
+            <div class="price" id="product_price">&pound;300.00</div>
+            <!-- Add to cart button -->
+            <div class="addtocart" onclick="itemAdd()">Add to Cart</div>
+        </div>
+
+    </div>
+
+<!-- Checkout form section -->
+    <div class="checkout_form">
+        <div class="full_form">
+              <!-- Form section to user details -->
+            <div class="form_section">
+                   <!-- Heading for the detail form -->
+                <h1 class="detail_heading">Detail Form</h1>
+                <!-- Form regarding the user details -->
+                <form action="" class="form">
+  <!-- Label and the input field for full name -->
+                    <label for="first_name" class="lab">
+                        Full Name :
+                    </label>
+                    <br>
+
+                    <input type="text" id="first_name" name="first_name" placeholder="Lakshan Cooray">
+                    <dv class="formValidation" id="name_msg"></dv>
+                    <br>
+
+   <!-- Label and the input section for the email address -->
+                    <label for="email" class="lab">
+                        Email:
+                    </label>
+                    <br>
+                  <!-- Label and input field for the address -->
+                    <input type="email" id="email" name="email" placeholder="lakshanCooray23@gmail.com"
+                    oninput="ValidateEmail();" >
+                    <dv class="formValidation" id="email_msg"></dv>
+                    <br>
+
+                    <label for="address" class="lab">
+                        Address :
+                    </label>
+                    <br>
+                    <input type="text" id="address" name="address" placeholder="Queens Street">
+                    <dv class="formValidation"  id="address_msg"></dv>
+                    <br>
+ <!-- Label and the input field for the city -->
+                    <label for="city" class="lab">
+                        City :
+                    </label>
+                    <br>
+                    <input type="text" id="city" name="city" placeholder="London">
+                    <dv class="formValidation"  id="city_msg"></dv>
+                    <br>
+
+                       <!-- Label and input field for the zip code -->
+                    <label for="zip_code" class="lab">
+                        Zip Code :
+                    </label>
+                    <br>
+                     <!-- Label and the input field for the phone number -->
+                    <input type="text" id="zip" name="zip" maxlength="9" placeholder="123 456">
+                    <dv class="formValidation" id="zip_msg"></dv>
+                    <br>
+<!-- label for the phone number -->
+                    <label for="phone_number" class="lab">
+                        Phone number :
+                    </label>
+                    <br>
+                    <!-- Input field for the phone number -->
+                    <input type="text" id="phone_number" name="phone_number" maxlength="14" placeholder="+94 712452323">
+                   <!-- Validation message for phone number -->
+                    <dv class="formValidation" id="phone_msg"></dv>
+                    <br>
+<!-- End of form -->
+                </form>
+
+            <!-- End of user detail section -->   
+            </div>
+
+            <!-- Horizontal line to separate user details and billing details -->
+            <div class="horizontal_line"></div>
+
+<!-- section for billing details-->
+            <section class="Billing_details">
+                <!-- Billing detailss' heading -->
+                <h3 class="Bill_heading">Total Bill</h3>
+                <div class="bill_form">
+                      <!-- Heading row for billing details -->
+                    <section class="bill_form_headings">
+                        <h4 class="Item_heading">Item</h4>
+                        <h4 class="Price_heading">Unit Price</h4>
+                        <h4 class="Quantity_heading">Quantity</h4>
+                        <h4 class="Total_heading" >Total Price</h4>
+                    </section>
+                      <!-- Container for display the item list in the bill -->
+                    <div class="Bill">
+                    </div>
+                           <!-- Total price of the bill -->
+                    <h4 class="tot_bill_price">Total Price : &pound;0.00</h4>
+                      <!-- Buttons regarding the checkout form -->
+                    <div class="form_button">
+                          <!-- Button which use to go back to the cart -->
+                        <button class="back_to_cart" onclick="close_checkout_form();">Back to Cart</button>
+                            <!-- Button to proceed with the payment -->
+                        <button type="button" class="proceed_payment"
+                        onclick="SubmitForm()">Proceed Payment</button>
+                    </div> 
+
+                </div> 
+            </section>
+
+        </div>
+    </div>
+<!-- Button for scrolling to the top of the page -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- Confirmation message block -->
+    <div class="conformatioMsg">
+            <!-- Button to exit from the confirmation message -->
+       <div class="massageblock">
+        <i class="fa fa-times" aria-hidden="true" onclick="CloseProceedPopwindow()" id="closePopProceed"
+    ></i>
+        <div class="greet">
+              <!-- Logo image to the confirmation message -->
+            <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw" id="logoweb">
+           <!-- Greeting text which displays on the confirmation message -->
+            <p class="proceedGreet">Thank You !!!</p>
+        </div>
+        
+        <!-- Last message to the confirmation -->
+        <p class="lastPop">
+            Dear Anna, you have
+            ordered 2 Oliver Twist Books at a cost of £20 each and 1 Harry Potter book at a
+            cost of £50. Your total bill is £90.
+        </p>
+       </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+         <!-- Heading and the link in the footer -->
+        <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Lakshan.html" class="footer_link"> Lakshan
+                Cooray</a></h3>
+    </footer>
+
+    <!-- Tags of javaScript script -->
+    <script type="text/javascript" src="../javascript/navigation.js">
+
+    </script>
+
+    <script src="../javascript/ShoppingCart.js">
+
+    </script>
+
+
+<!-- The end of HTML document -->
+</body>
+
+</html>

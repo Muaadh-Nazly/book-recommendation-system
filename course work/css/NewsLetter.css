@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Exo&family=Exo+2:wght@700;900&family=Fira+Sans+Condensed:wght@700&family=Josefin+Sans&family=Open+Sans:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto&family=Varela+Round&display=swap');
+
+:root {
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Roboto';
+    --colyellow: #FECD63;
+    --colblue: #0088a8;
+    --col_black1: #3b3c3d;
+    --font3:'Exo 2', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --jossofin:'Josefin Sans', sans-serif;
+
+}
+
+#divform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    border: 4px solid #f1f1f1;
+    /* border-color: yellow; */
+    border-radius: 10px;
+    padding:5px;
+    
+}
+
+.nlbody {
+    padding: 20px;
+    background-color: #FECD63;
+    border-radius: 10px;
+}
+
+
+.nlbutton {
+    border-radius: 10px;
+}
+
+#nlform {
+    border-radius: 10px;
+}
+
+#newsletterbody {
+    border-radius: 50px;
+}
+
+input[type=text],
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #24252a;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    background-color: rgb(74, 2, 100);
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(64, 24, 103);
+    
+}
+
+#nlpara {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+body {
+    background-image:url(../images/newlsetterbackground.webp);
+}
+
+.nltexts {
+    font-family: var(--poppins);
+    font-weight: bold;
+}
+
+/* Stylings for the footer */
+footer {
+    background-color: #24252a;
+    height: 10vh;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+}
+/* Stylings for the footer heading */
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    color: aliceblue;
+
+}
+/*This is the styling for footer links */
+.footer_link {
+    color: #bebebe;
+    transition-duration: 1.25s;
+}
+/* This depicts tyling for footer links on hover */
+.footer_link:hover {
+    color: var(--colyellow);
+    font-size: 20px;
+
+}
+/* This is the styling for footer links when active */
+.footer_link:active {
+    color: #0088a8;
+}

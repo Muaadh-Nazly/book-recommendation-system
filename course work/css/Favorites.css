@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Exo&family=Exo+2:wght@700;900&family=Fira+Sans+Condensed:wght@700&family=Josefin+Sans&family=Open+Sans:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto&family=Varela+Round&display=swap');
+
+:root {
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Roboto';
+    --colyellow: #FECD63;
+    --colblue: #0088a8;
+    --col_black1: #3b3c3d;
+    --font3:'Exo 2', sans-serif;
+    --poppins:'Poppins', sans-serif;
+    --jossofin:'Josefin Sans', sans-serif;
+
+}
+
+
+#divpref {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body{
+    background-color: #000000;
+}
+
+#divpref {
+    text-align: center;
+}
+
+#table1 {
+    width: 80%;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+#table1 td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#table1 td button,
+#table1 td a {
+    font-size: 24px;
+}
+
+#table1 {
+    width: 80%;
+    margin-top: 20px;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+  
+#table1 th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+  
+#table1 td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+ 
+#table1 td button,
+#table1 td a {
+    font-size: 16px;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.card:hover {
+    cursor:pointer;
+    transform: scale(1.065);
+    z-index: 300px;
+}
+  
+.card img {
+    flex: 1;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    height: 60%;
+}
+
+.card img:hover {
+    opacity: 1.0; 
+}
+
+.card-content h3 {
+    margin: 0;
+    font-family: var(--jossofin);
+}
+  
+.card-content p {
+    margin: 0;
+    font-family: var(--jossofin);
+}
+  
+
+#customlabel {
+    color: white;
+    font-weight: bold;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #customstyle {
+    margin-top: 20px;
+} */
+
+#customtexts {
+    color:white;
+    font-weight: bold;
+}
+
+#customsettings {
+    display: flex;
+    flex-direction: row;
+  }
+  
+#customsettings > div {
+    flex: 1;
+    margin: 10px;
+    font-family: var(--poppins);
+}
+
+
+.custombutton {
+    padding: 3px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#backgroundchange {
+    display:flex;
+    flex-direction: row;
+}
+
+
+h3{
+    font-family: var(--poppins);
+    font-size: 22px;
+}
+
+p{
+    padding-top: 30px;
+    font-family: var(--poppins);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Stylings for the footer */
+footer {
+    margin-top: 40px;
+    background-color: #24252a;
+    height: 10vh;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    white-space: nowrap;
+}
+/* Stylings for the footer heading */
+footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font1);
+    color: aliceblue;
+
+}
+/*This is the styling for footer links */
+.footer_link {
+    color: #bebebe;
+    transition-duration: 1.25s;
+}
+/* This depicts tyling for footer links on hover */
+.footer_link:hover {
+    color: var(--colyellow);
+    font-size: 20px;
+
+}
+/* This is the styling for footer links when active */
+.footer_link:active {
+    color: #0088a8;
+}
+
+
+#customsettings{
+    font-size: 25px;
+    color: #0088a8;
+}
+
+.custombutton{
+    height: 40px;
+    width: 80px;
+    background-color: #FECD63;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.custombutton:hover{
+    background-color: #fdebc4;
+}
+
+#background{
+  font-size: 20px;
+  border-radius:10px;
+}
+
+#textedit{
+    font-size: 20px;
+    border-radius:10px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: row;
+}
+
+#changeTextButton{
+    margin-top: 40px;
+    margin-left: -45px;
+}

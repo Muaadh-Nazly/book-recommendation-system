@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="icon" type="image/x-icon" href="../images/ChapterLogoFix.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/Comments.css">
+
+<body>
+    <header>
+        <img class="header-topic" src="../images/ChapterLogoFix.jpg" height="40vh" width="40vw" alt="Chapter Logo">
+        <h1 class="chapter_h1">Chapter</h1>
+
+        <ul class="nav_ul">
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Home.html"><button class="nav_button"
+                        id="button_1">Home</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Gallery.html"><button
+                        class="nav_button">Gallery</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Quiz.html"><button class="nav_button">Quiz</button></a>
+            </li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Scores.html"><button
+                        class="nav_button">Favorites</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter(); " href="../html/NewsLetter.html"><button class="nav_button">
+                        NewsLetter</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/ShoppingCart.html"><button
+                        class="nav_button">Shop</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+                " onmouseout="nav_back_highliter()" href="../html/Aboutus.html"><button class="nav_button">About
+                        Us</button></a>
+            <li>
+
+            <li class="nav_list"><a class="nav_link"><button class="nav_button current_page          hello"
+                        href="#">Comments</button></a></li>
+
+            <li class="nav_list"><a class="nav_link" onmouseover="nav_highliter(); 
+            " onmouseout="nav_back_highliter()" href="../html/Signup.html"><button class="nav_button">Sign
+                        Up</button></a></li>
+
+        </ul>
+    </header>
+
+    <main>
+        <!-- Form for comment -->
+        <form class="form" name="comment">
+            <div class="container">
+                <label for="userName">Username</label>
+                <input type="text" class="inputs" id="userName" placeholder="John Doe"><br><br>
+                <label for="email">Email</label>
+                <input type="text" class="inputs" id="email" placeholder="johndoe@gmail.com"><br><br>
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment">Enter your comment here....</textarea><br>
+
+                <!-- Rating section -->
+                <p>Rate Us</p>
+                <div class="rating">
+                    <input type="radio" name="rating" id="rating-5"   >
+                    <label for="rating-5" title="Excellent" class="inset">`</label >
+                    <input type="radio" name="rating" id="rating-4">
+                    <label for="rating-4" title="Very Good"class="inset">`</label>
+                    <input type="radio" name="rating" id="rating-3">
+                    <label for="rating-3" title="Good"class="inset">`</label>
+                    <input type="radio" name="rating" id="rating-2">
+                    <label for="rating-2" title="Poor"class="inset">`</label>
+                    <input type="radio" name="rating" id="rating-1">
+                    <label for="rating-1" title="Very Poor"class="inset">`</label>
+                    
+                
+            </div><br>
+            <button type="reset" class="form-btn" id="reset">Reset</button>
+            <button type="submit" class="form-btn" id="submit">Submit</button>
+            </div>
+        </fieldset>
+            
+        </form>
+        
+            
+    </main>
+
+    
+    <footer>
+        <h3 class="footer_heading">Designed By &nbsp;<a href="../html/Muaadh.html" class="footer_link"> Muaadh
+            Nazly</a></h3>
+    </footer>
+
+    </footer>
+    <script type="text/javascript" src="../javascript/Comments.js"></script>
+
+    <script type="text/javascript" src="../javascript/navigation.js">
+
+    </script>
+</body>
+
+</html>

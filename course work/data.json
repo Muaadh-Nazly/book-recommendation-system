@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Wooden Shelf",
+        "price": "150.00",
+        "desc": "Organize your book collection in style with this sturdy wooden bookshelf. With multiple shelves, it provides ample space for storing your favorite books, magazines, and literary treasures. The timeless design and natural finish add warmth and elegance to any room, making it a perfect addition to your home library or study.",
+        "rt": 3,
+        "image":"../images/woodenbookshelf.webp"
+    },
+
+    {
+        "title": "Custom Bookmark",
+        "price": "20.00",
+        "desc": "Make your reading experience truly unique with this customizable bookmark. Personalize it with your name or initials engraved on the surface, adding a personal touch to your favorite books. ",
+        "rt": 4,
+        "image":"../images/custombookmark.webp"
+    },
+
+    {
+        "title": "Book Cart",
+        "price": "175.00",
+        "desc": "Effortlessly transport your books around your library or home with this practical wheeled book cart. Designed with convenience in mind, it features sturdy construction and ample storage space for books of all sizes.",
+        "rt": 3,
+        "image":"../images/librarybookcart.webp"
+    },
+
+    {
+        "title": "Book Strap",
+        "price": "40.00",
+        "desc": "Protect and secure your books during travel with this genuine leather strap. The adjustable design allows you to accommodate books of various sizes, ensuring a snug fit. Made from high-quality leather, it provides both durability and a touch of elegance.",
+        "rt": 5,
+        "image":"../images/bookstrap.webp"
+    },
+
+    {
+        "title": "Book Stand",
+        "price": "125.00",
+        "desc": "Read comfortably for hours with this adjustable book stand. Designed to hold your book open at the perfect angle, it eliminates the need for constantly propping it up with your hands. ",
+        "rt": 3,
+        "image": "../images/bookstand.webp"
+    },
+
+    {
+        "title": "Display Easel",
+        "price": "80.00",
+        "desc": "Showcase your favorite books or present new releases in style with this elegant easel-style book display. Its sophisticated design and sturdy construction provide a beautiful and practical way to highlight books in your home, office, or bookstore. ",
+        "rt": 4,
+        "image": "../images/bookdisplayeasel.webp"
+    },
+
+    {
+        "title": "Floating Shelf",
+        "price": "110.00",
+        "desc": "Create a mesmerizing display with this innovative floating bookshelf. Its clever design gives the illusion of books magically floating on your wall, adding a touch of whimsy and intrigue to your home decor.",
+        "rt": 5,
+        "image":"../images/floatingbookshelf.webp"
+    },
+
+    {
+        "title": "Wallmount Drack",
+        "price": "145.00",
+        "desc": "Maximize space and display your favorite books with this sleek wall-mounted book rack. Its minimalist design complements any interior decor, while the sturdy construction ensures stability and durability.",
+        "rt": 3,
+        "image":"../images/wallmountedrack.webp"
+
+    },
+
+    {
+        "title": "Classic Bookmark",
+        "price": "18.75",
+        "desc": "Enhance your reading experience with this stylish and durable bookmark featuring a classic design. Made from high-quality materials, this bookmark is built to last and adds a touch of sophistication to any book.",
+        "rt": 4,
+        "image":"../images/classicbookmark.webp"
+    },
+
+    {
+        "title": "Bookend Spair",
+        "price": "35.50",
+        "desc": "Keep your books neatly organized and add a decorative touch to your shelf with this pair of bookends. Crafted with attention to detail, they feature a stylish design that complements any decor style.",
+        "rt": 5,
+        "image":"../images/bookendspair.webp"
+    },
+
+    {
+        "title": "Magnetic Bookmark",
+        "price": "25.50",
+        "desc": ">Mark multiple pages in your books with this set of magnetic bookmarks. Each bookmark features a unique and eye-catching design, making it easy to find your place in different books or chapters. ",
+        "rt": 4,
+        "image":"../images/magneticbookmark.webp"
+    },
+
+    {
+        "title": "Flourish Bookmark",
+        "price": "22.75",
+        "desc": "Add a vibrant touch to your reading experience with this set of colorful bookmarks. Each bookmark features a unique design and vivid colors that bring joy and personality to your books.",
+        "rt": 3,
+        "image":"../images/colorfulbookmark.webp"
+    }
+]
