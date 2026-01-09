@@ -106,7 +106,7 @@ CM 1605 Web Technology/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd "CM 1605 Web Technology"
+   cd book-recommendation-system
    ```
 
 2. **Open the project**
